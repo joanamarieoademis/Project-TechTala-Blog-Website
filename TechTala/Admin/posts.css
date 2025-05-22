@@ -1,0 +1,141 @@
+.container{
+    margin-left: 290px;
+    width: auto;
+    background-color: white;
+    padding: 0 20px;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: #465F78;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+.s-main{
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.s-image{
+    position: absolute;
+    width: 25px;
+    padding-right: 5px;
+    color: #666;
+}
+
+.s-box{
+    width: 30%;
+    padding: 8px  15px 8px 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+}
+
+.post-mgt{
+    background-color: white;
+    margin-top: 30px;
+    width: 100%;
+    min-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.post-mgt, th, td{
+    padding: 12px 15px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-mgt th{
+    background-color: #465F78;
+    color: white;
+}
+
+.post-mgt button{
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.post-mgt button:hover{
+    opacity: 0.5;
+}
+
+.post-mgt .edit, .delete{
+    background-color: #fff;
+}
+
+.post-mgt  img{
+    width: 20px;
+}
+
+
+@media screen and (max-width: 960px) {
+    .container {
+        margin-left: 0px;
+        padding: 15px;
+    }
+
+    .post-mgt  button{
+        padding: 3px 5px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+        padding: 15px 0;
+    }
+
+    .post-mgt, th, td {
+        font-size: 14px;
+    }
+
+    .post-mgt  img{
+        width: 15px;
+    }
+
+    .post-mgt  button{
+        padding: 0px 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+        padding: 10px 0;
+    }
+
+    .post-mgt, th, td {
+        padding: 8px;
+    }
+
+    .s-box{
+        width: 40%;
+    }
+    
+    .s-image{
+        width: 17px;
+    }
+
+    .table{
+        overflow-x: auto;
+    }
+
+    .table::-webkit-scrollbar{
+        height: 4px;
+        width: 4px;
+    }
+
+    .table::-webkit-scrollbar-thumb{
+        background-color: #e6e3e3;
+        border-radius: 4px;
+    }
+}

@@ -1,0 +1,312 @@
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.content {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.content h1 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 30px;
+    transition: 0.3s;
+    background-color: #465f78d8;
+}
+
+.content a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.content p{
+    color: white;
+    margin-top: 30px;
+}
+
+
+.contents{
+    padding: 20px;
+    margin: 50px;
+}
+
+.cont1{
+    margin-bottom: 60px;
+}
+
+.cont1 h1{
+    text-align: center;
+    font-size: 40px;
+    color: #2C3E50;
+    font-weight: bold;
+}
+
+.featured{
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: -50px auto 50px;
+    max-width: 900px;
+    position: relative;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.featured img{
+    width: 50%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.featured h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: none;
+}
+
+.featured p{
+    font-size: 16px;
+    color: #555;
+    padding: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.featured  a{
+    padding-left: 15px;
+}
+
+.featured a:hover{
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.cont2{
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.cont2 h1{
+    text-align: center;
+    font-size: 40px;
+    color: #2C3E50;
+    font-weight: bold;
+}
+
+.boxes{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+}
+
+.recents {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgb(174, 172, 172);
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s;
+    position: relative;
+}
+
+.recents:hover {
+    transform: translateY(-5px);
+}
+
+.recents h2{
+    color: #333;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.recents p{
+    padding: 5px 20px 20px 20px;
+    color: #555;
+    line-height: 1.5;
+    padding-bottom: 40px;
+}
+
+span{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 12px;
+    color: #888;
+    font-style: italic;
+}
+
+@media screen and (max-width: 875px) {
+    .content h1{
+        font-size: 50px;
+    }
+
+    .content p{
+        font-size: 16px;
+    }
+
+    .content a{
+        font-size: 20px;
+    }
+
+    .contents {
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .cont1 {
+        gap: 25px;
+    }
+
+    .cont1 h1, .cont2 h1, .cont3 h1{
+        font-size: 40px;
+    }
+
+    .featured{
+        margin: 30px;
+        padding: 20px;
+    }
+
+    .featured img{
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .featured h1{
+        font-size: 28px;
+    } 
+    
+    .featured p{
+        padding-top: 0px;
+        font-size: 16px;
+    }
+
+    .featured a{
+        font-size: 14px;
+    }
+    
+    .boxes{
+        margin-top: 30px;
+    }
+    
+    .recents {
+        width: 275px;
+    }
+    
+    .recents h2, .dra h2{
+        font-size: 20px;
+    }
+    
+    .recents p, .dra p{
+        font-size: 14px;
+    }
+    
+    .recents img{
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    nav .logo{
+        width:40px;
+    }
+
+    h3{
+        font-size: 14px;
+        margin-left: 50px;
+    }
+    
+    .content h1{
+        font-size: 30px;
+    }
+
+    .content p, .content a, .featured a, .recents p,
+    .dra p, .button a{
+        font-size: 14px;
+    }
+
+    .cont1 h1, .cont2 h1, .cont3 h1{
+        font-size: 30px;
+    }
+
+    .contents {
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .cont1 {
+        gap: 25px;
+    }
+
+    .featured{
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .featured img{
+        width: 75vw;
+        height: 20vh;
+    }
+
+    .featured h1{
+        font-size: 18px;
+    } 
+    
+    .featured p{
+        padding-top: 0px;
+        font-size: 14px;
+    }
+    
+    .recents {
+        width: 300px;
+    }
+    
+    .recents h2, .dra h2{
+        font-size: 18px;
+    }
+    
+    .recents img{
+        border-radius: 5px;
+    }
+}
