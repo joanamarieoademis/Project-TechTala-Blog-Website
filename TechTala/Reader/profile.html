@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profread</title>
+    <link rel="icon" href="image/logo.png">
+    <link rel="stylesheet" href="header_reader.css">
+    <link rel="stylesheet" href="profile.css">
+    
+
+</head>
+<body>
+    <nav>
+        <img src="image/logo.png" class="logo">
+        <h3>TechTala</h3>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="postpage.html">Posts</a></li>
+            <li class="search-container"><img class="search-image" src="image/search.png" alt="">
+                <input class="search" type="text" placeholder="Search"> </li>
+            <li><div class="drop">
+            <div class="menu">
+                <img class="profile" src="image/profile.png" alt=""></a>
+            </div>
+                    <div class="sub-menu">
+                        <a href="profile.html">Profile</a>
+                        <a href="comments.html">Comments</a>
+                        <a href="/Authentication/homepage.html">Logout</a>
+                    </div>
+            </div></div></li>
+            <li id="com"><a href="comments.html">Comments</a></li>
+            <li id="prof_hide"><a href="profile.html">Profile</a></li>
+            <li id="log"><a href="/Authentication/homepage.html">Logout</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <span></span>
+        </div>
+    </nav>
+
+
+   <div class="main-content">
+        <section>
+            <h1>Profile</h1>
+            <form class="edit-profile-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="gender-options">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="not-specified"> Not Specified</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="profile-picture">Profile Picture:</label>
+                    <input type="file" id="profile-picture" name="profile-picture" class="form-input" accept="image/*">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="save-button">Save</button>
+                </div>
+            </form>
+   </div>
+
+
+    <script src="header.js"></script>
+</body>
+</html>

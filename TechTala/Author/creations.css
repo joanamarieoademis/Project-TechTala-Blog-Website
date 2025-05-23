@@ -1,0 +1,75 @@
+nav{
+    background-color: #2C3E50;
+}
+
+.content{
+    padding: 50px;
+}
+
+.content h1{
+    text-align: center;
+    font-size: 40px;
+    color: #2C3E50;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+.main{
+    margin-top: 10px;
+}
+
+.main .box{
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    height: auto;
+    border-left: 7px solid #2C3E50;
+    transition: 0.5s;
+}
+
+.box:hover{
+    transform: translateX(10px);
+}
+
+.box h2{
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: #333;
+}
+
+.box p{
+    padding: 5px 20px 20px 20px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.button{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.button a{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    justify-content: center;
+    width: 100px;
+}
+
+.button a:hover{
+    opacity: 0.5;
+}
+
+.button .edit{
+    background-color: #2C3E50;
+    color: white;
+    padding: 5px 10px;
+}
