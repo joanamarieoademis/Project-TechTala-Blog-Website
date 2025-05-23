@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/logo.png">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="header_author.css">
+    <title>TechTala</title>
+</head>
+<body>
+    <nav>
+        <img src="image/logo.png" class="logo">
+        <h3>TechTala</h3>
+
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="creations.html">Creations</a></li>
+            <li><a href="create_newblog.html">Create New Blog</a></li>
+            <li><div class="drop">
+            <div class="menu">
+                <img class="profile" src="image/profile.png" alt="">
+            </div>
+                    <div class="sub-menu">
+                        <a href="profile.html">Profile</a>
+                        <a href="/Authentication/homepage.html">Logout</a>
+                    </div>
+            </div></div></li>
+
+            <li id="prof_hide"><a href="profile.html"><span>Profile</span></a></li>
+            <li id="log"><a href="/Authentication/homepage.html">Logout</a></li>
+        </ul>
+        
+        <div class="hamburger">
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section>
+            <h1>Profile</h1>
+            <form class="edit-profile-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="display-name">Display Name: (Optional)</label>
+                    <input type="text" id="display-name" name="display-name" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="gender-options">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="not-specified"> Not Specified</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="short-bio">Short Bio:</label>
+                    <textarea id="short-bio" name="short-bio" class="form-input large-input"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="profile-picture">Profile Picture:</label>
+                    <input type="file" id="profile-picture" name="profile-picture" class="form-input" accept="image/*">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="save-button">Save</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h1>Preview</h1>
+            <div class="profile-details">
+                <img src="image/profile.png" alt="Profile Picture" class="profile-details-picture">
+                <ul class="details-list">
+                    <li><strong>Username:</strong> Techtala</li>
+                    <li><strong>Gender:</strong> Unknown Gender</li>
+                    <li><strong>Date Joined:</strong> May 5, 2025</li>
+                </ul>
+            </div>
+            <p class="bio">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nisi excepturi necessitatibus? Tempora at dolor fuga non odio, labore dicta commodi nostrum earum, culpa facere vitae laboriosam doloribus explicabo consequatur!
+                Amet, dolore. Facilis pariatur quia perspiciatis velit earum voluptatum autem odit ducimus officiis impedit tempora incidunt voluptatibus nam corporis repellat cupiditate reprehenderit, totam enim tenetur est inventore! Ipsam, velit beatae?
+            </p>
+            <h4 class="post">Total posts published: <span>10</span></h4>
+            <p>You can contact me via <a href="mailto:example@example.com">email</a>.</p>
+        </section>
+    </main>
+
+    <script src="header.js"></script>
+</body>
+</html>
